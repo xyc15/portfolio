@@ -1,0 +1,214 @@
+.row{
+  @mixin clearfix;
+  &--t-padding{
+    padding-top: 80px;
+  }
+
+  &__image {
+    /* border-radius: 80px;*/
+    overflow:hidden;
+    width: 70%;
+    height:220px;
+    margin: auto;
+    margin-bottom: 2rem;
+    img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    @mixin atSmall{
+      width: 50%;
+      height: 260px;
+    }
+    @mixin atMedium{
+      padding-left:65px;
+      height: 300px;
+
+    }
+  }
+
+  &__content{
+    margin: 0 1rem;
+    @mixin atMedium{
+      margin:0;
+    }
+  }
+
+  &--narrow-at-small {
+    width: 80%;
+    margin: auto;
+    @mixin atMedium{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+
+/*margin properties for medium to large screen*/
+  @mixin atMedium{
+    &--gutters{ /*remove the padding of the rightmost element*/
+      margin-right: -65px;
+      /*we give it a negative margin matching the padding value, instead of reducing its margin because that will affect the ratio of our columns (because column width includs padding value)*/
+      /*However, this negative margin has made the row in general 65px wider than it should be. So we need to set overflow:hiddden in wrapper class.
+      In this case, the negative margin still exists, but we cannot see it*/
+    }
+
+    &--gutters-large{
+      margin-right: -100px;
+    }
+
+    &--gutters-small{
+      margin-right: -45px;
+    }
+
+    &--gutters > div{  /*this selector selects all direct children that use a tag of div*/
+      padding-right: 65px;
+      /*
+      Include padding and border in the element's total width and height:
+      box-sizing: border-box;/
+      *By setting this, web browser will honor our declared width values (including paddings),
+      as shown in base/_global.css file*/
+    }
+
+    &--gutters-large > div{  /*this selector selects all direct children that use a tag of div*/
+      padding-right: 100px;
+    }
+
+    &--gutters-small > div{  /*this selector selects all direct children that use a tag of div*/
+      padding-right: 45px;
+    }
+
+  }
+
+&__6{
+  float: left;
+  width: 50%;
+}
+ @mixin atSmall{
+  &__small-4{
+    float: left;
+    width: 33.33%;
+  }
+}
+  /* properties for medium screen */
+  @mixin atMedium{
+    &__medium-2{
+      float: left;
+      width: 20%;
+    }
+
+    &__medium-3{
+      float: left;
+      width: 25%;
+    }
+
+  &__medium-4{
+    float: left;
+    width: 33.33%
+  }
+
+
+  &__medium-4--larger{
+    width: 40%;
+  }
+
+  &__medium-6{
+    float: left;
+    width: 50%;
+  }
+
+  &__medium-8{
+    float: right;
+    width: 66.66%;
+  }
+
+  &__medium-8--smaller{
+    width: 60%;
+  }
+}
+
+/* properties for medium screen */
+  @mixin atLarge{
+    &__large-2{
+      float: left;
+      width: 20%;
+    }
+    &__large-4{
+      float: left;
+      width: 33.33%
+    }
+
+    /* &__b-margin-until-large{
+      margin-bottom: 0;
+    } */
+
+    &__large-4--larger{
+      width: 37%;
+    }
+
+    &__large-6{
+      float: left;
+      width: 50%;
+    }
+    &__large-8{
+      float: right;
+      width: 66.66%;
+    }
+
+    &__large-8--smaller{
+      width: 63%;
+    }
+  }
+
+  /* Begin Equal Height Rules */
+  /*Newly added .flexbox class, so only let them have equal height when the browser (96%) supports flexbox*/
+  .flexbox &--equal-height{
+    display: flex;
+    flex-wrap: wrap;
+    &--equal-height > div{
+      float: none;
+      display: flex;
+      align-self: stretch;
+    }
+
+  }
+  .flexbox &--equal-height-at-small{
+    @mixin atSmall{
+      display: flex;
+      flex-wrap: wrap; /*add this so items will break into lines*/
+      /* justify-content: stretch; */
+
+    }
+    & > div{  /*select all the columns, tell each of them to use flex box instead of float to the left, the contents of each will match the tallest element*/
+      float: none;
+      display: flex;
+      align-self: stretch;
+    }
+  }
+  .flexbox &--equal-height-at-medium{
+    @mixin atMedium{
+      display: flex;
+      flex-wrap: wrap; /*add this so items will break into lines*/
+      /* justify-content: stretch; /*make all project-items equal height*/
+
+    }
+    & > div{  /*select all the columns, tell each of them to use flex box instead of float to the left, the contents of each will match the tallest element*/
+      float: none;
+      display: flex;
+      /* align-self: stretch; */
+    }
+  }
+
+  .flexbox &--equal-height-at-large{
+    @mixin atLarge{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+    & > div{  /*select all the columns, to let their column height matches the tallest one*/
+      float: none;
+      display: flex;
+      /* align-self: stretch; */
+    }
+  }
+}

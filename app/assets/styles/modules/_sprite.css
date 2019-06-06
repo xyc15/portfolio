@@ -1,0 +1,190 @@
+/*mustache template system: within the two lines below, any code that included will be looped through for each icon*/
+/*in image url, we can also use '/temp/sprite/css/sprite-cc75b77d.svg'. First goes to the folder that is being served up in the browser, then go to the temp folder*/
+/*we use a variable sprite, because everytime a new svg file is generated, the number in its name will be randomly re-generated.
+Besides, we use three sets of brackets instead of two sets, is because this variable will contain a forward slash telling it to go into the svg folder,
+and we don't want the forward slash character to be escaped.*/
+/* for more information: https://github.com/jkphl/svg-sprite
+https://github.com/jkphl/svg-sprite/blob/master/docs/templating.md*/
+
+/*****Do not edit modules/_sprite directly as it is generated automatically by gulp.
+Instead, edit gulp/templates/sprite*****/
+
+  /*To avoid path duplications of each icon in css file, we create this baseline icon rule,
+  but the sprite variable can only be accessed through the shapes loop,
+  any code within this     will run only once for the first item it looped through*/
+  .icon {
+    /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+    background-image: url('../../assets/images/sprites/sprite-cc75b77d.svg');
+  }
+
+  .no-svg .icon {
+    background-image: url('../../assets/images/sprites/sprite-cc75b77d.png');
+  }
+.icon--algorithm {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 100% 59.35308056872039%;
+}
+.icon--aws {
+  width: 152px;
+  height: 87px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 34.70319634703196% 0;
+}
+.icon--bootstrap {
+  width: 102px;
+  height: 102px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 83.19672131147541% 0;
+}
+.icon--c {
+  width: 92px;
+  height: 92px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 53.4136546184739% 99.7621359223301%;
+}
+.icon--c-plus {
+  width: 82px;
+  height: 83.93px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 100% 20.125217225700478%;
+}
+.icon--computer-networks {
+  width: 102px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 83.19672131147541% 48.34123222748815%;
+}
+.icon--css3 {
+  width: 82px;
+  height: 92.96px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 0 99.9951342934994%;
+}
+.icon--data-structure {
+  width: 102px;
+  height: 82.4px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 0 77.9459203036053%;
+}
+.icon--email {
+  width: 102px;
+  height: 102px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 62.295081967213115% 25.37313432835821%;
+}
+.icon--express-js {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 100% 78.78436018957346%;
+}
+.icon--firebase {
+  width: 92px;
+  height: 92px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 34.93975903614458% 99.7621359223301%;
+}
+.icon--git {
+  width: 135.3px;
+  height: 68.67px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 0 21.21379183607838%;
+}
+.icon--github {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 100% 39.921800947867304%;
+}
+.icon--html5 {
+  width: 92px;
+  height: 92px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 16.46586345381526% 99.7621359223301%;
+}
+.icon--java {
+  width: 122px;
+  height: 78.67px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 28.846153846153847% 37.85766346131239%;
+}
+.icon--jquery {
+  width: 152px;
+  height: 92.35px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 0 0;
+}
+.icon--js {
+  width: 82px;
+  height: 87.69px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 70.4724409448819% 98.72931229132136%;
+}
+.icon--linkedin {
+  width: 102px;
+  height: 102px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 83.19672131147541% 25.37313432835821%;
+}
+.icon--mongodb {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 20.078740157480315% 77.87203791469194%;
+}
+.icon--mongoose {
+  width: 102px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 0 58.440758293838854%;
+}
+.icon--nodejs {
+  width: 135px;
+  height: 85.6px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 0 38.48470363288719%;
+}
+.icon--postgres-sql {
+  width: 82px;
+  height: 84.54px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 100% 0;
+}
+.icon--python {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 100% 98.21563981042654%;
+}
+.icon--react {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 20.078740157480315% 58.440758293838854%;
+}
+.icon--redux {
+  width: 82px;
+  height: 74.2px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 36.22047244094488% 57.38017682643089%;
+}
+.icon--resume {
+  width: 102px;
+  height: 102px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 62.295081967213115% 0;
+}
+.icon--web-dev {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 36.22047244094488% 77.87203791469194%;
+}
+.icon--webpack {
+  width: 82px;
+  height: 82px;
+  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
+  background-position: 52.36220472440945% 77.87203791469194%;
+}

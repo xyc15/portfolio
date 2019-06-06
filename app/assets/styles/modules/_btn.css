@@ -1,0 +1,21 @@
+
+
+.btn{
+  /* background-color: $mainBlue; */
+  color: white;
+  text-decoration: none; /*remove the underline of the button text*/
+  padding: .7rem 1.2rem;
+  display: inline-block; /*By setting this, its parent and surroundings will be aware of its vertical padding*/
+/*Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.*/
+  &--orange{
+    background-color: $mainOrange;
+  }
+
+  &--large{
+    padding: 1rem 1.5rem;
+    @mixin atSmall{
+      font-size: 1.25rem;
+    }
+  }
+}

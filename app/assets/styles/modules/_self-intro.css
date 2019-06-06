@@ -1,0 +1,51 @@
+.self-intro {
+  background: url('../../assets/images/profile-background.jpg');
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+
+  &__intro {
+    /* margin-top: 2rem; */
+    position: absolute;
+    left:50%;
+    top:30%;
+    transform: translate(-50%,-20%);
+  }
+
+  &__title{
+    color: #fff;
+    font-size: 1.875rem;
+    span{
+      color:$mainOrange;
+    }
+    @mixin atSmall {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 25rem;
+
+    @mixin atMedium {
+      font-size: 1.8rem;
+      max-width: 100%;
+    }
+
+  }
+
+  &__icon {
+    bottom: 10%;
+    position: absolute;
+    right: 10%;
+    i{
+      color: $lightGreen;
+    }
+    i:hover{
+      color: $mainOrange;
+    }
+
+  }
+}

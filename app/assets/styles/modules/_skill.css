@@ -1,0 +1,32 @@
+.skill{
+  @mixin clearfix;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  &__title{
+    color: $mainBlue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;;
+  }
+  &__item{
+    text-align: center;
+    font-size: 0.9rem;
+    width: 159px;
+    margin:1px 0;
+  }
+
+
+  &__icon{
+    margin: 1px 30px;
+    display: inline-block;
+}
+
+  hr{
+    color: $mainBlue;
+    height: 1px;
+    background-color: rgba($mainOrange, 0.5);
+  }
+}

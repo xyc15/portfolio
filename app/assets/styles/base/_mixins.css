@@ -1,0 +1,30 @@
+@define-mixin atSmall{
+  @media (min-width: 530px){
+    @mixin-content;  /*it's ok to add or remove this line of code*/
+  }
+}
+
+@define-mixin atMedium{
+  @media (min-width: 800px){
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge{
+  @media (min-width: 1010px){
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix{
+  /*this css selector will add this blank space after all of the content in the main "row" div*/
+    &::after{
+      content: "";
+      clear: both; /*The clear property specifies what elements can float beside the cleared element and on which side.
+      both - No floating elements allowed on either the left or the right side
+
+      When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left.
+      Your floated element will continue to float, but the cleared element will appear below it on the web page.*/
+      display: table;
+    }
+}

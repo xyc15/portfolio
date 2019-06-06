@@ -1,0 +1,36 @@
+.fa-bounce {
+    display: inline-block;
+    position: relative;
+    animation: bounce 1s infinite linear;
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+.social-icons{
+  text-align: center;
+  display: block;
+
+  &__icon {
+    display: inline-block;
+    margin: 0 15px 5px 15px;
+    width: 33%;
+    height: 72px;
+    position: relative;
+
+    @mixin atMedium {
+      width: 72px;
+      margin: 0 15px;
+    }
+    .icon { /*nested descendant selector rule -- lin  k for any class that has a class name "icon" (this will target at span element)*/
+      display: block;
+      position: absolute;
+      top: 50%;  /*to position the icon in the center*/
+      left: 50%; /*to position the icon in the center*/
+      transform: translate(-50%, -50%); /*pull the content half back horizontally and vertically*/
+    }
+  }
+}

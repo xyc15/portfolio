@@ -1,0 +1,22 @@
+.generic-content-container{
+  p{
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0 0 0.2rem 0;
+
+    @mixin atSmall{
+      font-size: 1.125rem;
+    }
+  }
+  p strong{
+    color: $mainOrange;
+  }
+  p a{
+    font-weight: 500;
+  }
+
+  &__text {
+    text-align: justify;
+    margin-bottom: 3rem;;
+  }
+}

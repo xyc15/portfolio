@@ -1,0 +1,24 @@
+@import "normalize.css";  /*just type the name of the package in node_modules folder.
+This package is similar to css reset, it adjust the styles of certain elements in an effort to make all web browsers render things more consistently*/
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_row";
+@import "modules/_skill";
+@import "modules/_site-footer";
+
+@import "modules/_reveal-item";
+@import "modules/_modal";
+@import "modules/_sprite";
+
+@import "modules/_self-intro";
+@import "modules/_icons";
+@import "modules/_site-header";
+@import "modules/_navbar";
+@import "modules/_generic-content-container";
+@import "modules/_headline";
+@import "modules/_project-item";

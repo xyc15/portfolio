@@ -1,0 +1,32 @@
+/*mustache template system: within the two lines below, any code that included will be looped through for each icon*/
+/*in image url, we can also use '/temp/sprite/css/{{{sprite}}}'. First goes to the folder that is being served up in the browser, then go to the temp folder*/
+/*we use a variable sprite, because everytime a new svg file is generated, the number in its name will be randomly re-generated.
+Besides, we use three sets of brackets instead of two sets, is because this variable will contain a forward slash telling it to go into the svg folder,
+and we don't want the forward slash character to be escaped.*/
+/* for more information: https://github.com/jkphl/svg-sprite
+https://github.com/jkphl/svg-sprite/blob/master/docs/templating.md*/
+
+/*****Do not edit modules/_sprite directly as it is generated automatically by gulp.
+Instead, edit gulp/templates/sprite*****/
+
+{{#shapes}}
+  {{#first}}
+  /*To avoid path duplications of each icon in css file, we create this baseline icon rule,
+  but the sprite variable can only be accessed through the shapes loop,
+  any code within this {{#first}}  {{/first}}  will run only once for the first item it looped through*/
+  .icon {
+    /* background-image: url('../sprite/css/{{{sprite}}}'); */
+    background-image: url('../../assets/images/sprites/{{{sprite}}}');
+  }
+
+  .no-svg .icon {
+    background-image: url('../../assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+  }
+  {{/first}}
+.icon--{{base}} {
+  width: {{width.outer}}px;
+  height: {{height.outer}}px;
+  /* background-image: url('../sprite/css/{{{sprite}}}'); */
+  background-position: {{position.relative.xy}};
+}
+{{/shapes}}
