@@ -938,7 +938,8 @@ Also, with display: inline-block, the top and bottom margins/paddings are respec
 .modal {
   position: fixed;
   z-index: 5;
-  background-color: rgba(255, 255, 255, 0.95);
+  /* background-color: rgba(171, 216, 216, 0.9); */
+  background-color: rgba(205,247,247, 0.9);
   top: 0; /*guarantee it to take up the full height of the browser*/
   bottom: 0;  /*guarantee it to take up the full height of the browser*/
   left: 0;  /*guarantee it to take up the full width of the browser*/
@@ -1305,7 +1306,7 @@ Instead, edit gulp/templates/sprite*****/
   }
 
 .self-intro__icon i{
-      color: #7ec647;
+      color: #cdf7f7;
     }
 
 .self-intro__icon i:hover{
