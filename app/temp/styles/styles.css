@@ -972,7 +972,6 @@ Also, with display: inline-block, the top and bottom margins/paddings are respec
     font-weight: 300;
     text-align: center;
     margin-top: 0rem;
-    margin-bottom: 3rem;
     /* &__icon{
       display: block;
       margin-left: auto;
@@ -1336,12 +1335,11 @@ Instead, edit gulp/templates/sprite*****/
 
 .social-icons{
   text-align: center;
-  display: block;
 }
 
 .social-icons__icon {
     display: inline-block;
-    margin: 0 15px 5px 15px;
+    margin: 20px;
     width: 33%;
     height: 72px;
     position: relative;
@@ -1351,12 +1349,12 @@ Instead, edit gulp/templates/sprite*****/
 
 .social-icons__icon {
       width: 72px;
-      margin: 0 15px
+      margin: 0 20px
   }
   }
 
 .social-icons__icon .icon { /*nested descendant selector rule -- lin  k for any class that has a class name "icon" (this will target at span element)*/
-      display: block;
+      /* display: block; */
       position: absolute;
       top: 50%;  /*to position the icon in the center*/
       left: 50%; /*to position the icon in the center*/
@@ -1395,6 +1393,9 @@ Instead, edit gulp/templates/sprite*****/
 
 .site-header__btn-container {
     background-color: rgb(51, 71, 104);
+    text-align: center;
+    margin: auto;
+    width: 110px;
 
   }
 

@@ -12,21 +12,20 @@
 
 .social-icons{
   text-align: center;
-  display: block;
 
   &__icon {
     display: inline-block;
-    margin: 0 15px 5px 15px;
+    margin: 20px;
     width: 33%;
     height: 72px;
     position: relative;
 
     @mixin atMedium {
       width: 72px;
-      margin: 0 15px;
+      margin: 0 20px;
     }
     .icon { /*nested descendant selector rule -- lin  k for any class that has a class name "icon" (this will target at span element)*/
-      display: block;
+      /* display: block; */
       position: absolute;
       top: 50%;  /*to position the icon in the center*/
       left: 50%; /*to position the icon in the center*/

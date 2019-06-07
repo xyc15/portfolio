@@ -19,6 +19,9 @@
 
   &__btn-container {
     background-color: rgb(51, 71, 104);
+    text-align: center;
+    margin: auto;
+    width: 110px;
     @mixin atMedium {/*only float right in medium to large screen*/
       float: right;
     }
