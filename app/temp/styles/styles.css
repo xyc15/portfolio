@@ -1027,7 +1027,7 @@ Also, with display: inline-block, the top and bottom margins/paddings are respec
 
 /*mustache template system: within the two lines below, any code that included will be looped through for each icon*/
 
-/*in image url, we can also use '/temp/sprite/css/sprite-cc75b77d.svg'. First goes to the folder that is being served up in the browser, then go to the temp folder*/
+/*in image url, we can also use '/temp/sprite/css/sprite-fb2fb88c.svg'. First goes to the folder that is being served up in the browser, then go to the temp folder*/
 
 /*we use a variable sprite, because everytime a new svg file is generated, the number in its name will be randomly re-generated.
 Besides, we use three sets of brackets instead of two sets, is because this variable will contain a forward slash telling it to go into the svg folder,
@@ -1044,208 +1044,208 @@ Instead, edit gulp/templates/sprite*****/
   any code within this     will run only once for the first item it looped through*/
 
 .icon {
-    /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-    background-image: url('../../assets/images/sprites/sprite-cc75b77d.svg');
+    /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+    background-image: url('../../assets/images/sprites/sprite-fb2fb88c.svg');
   }
 
 .no-svg .icon {
-    background-image: url('../../assets/images/sprites/sprite-cc75b77d.png');
+    background-image: url('../../assets/images/sprites/sprite-fb2fb88c.png');
   }
 
 .icon--algorithm {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 100% 59.35308056872039%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 99.84848484848484% 38.05733944954128%;
 }
 
 .icon--aws {
-  width: 152px;
+  width: 102px;
   height: 87px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 34.70319634703196% 0;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 0 35.79350348027842%;
 }
 
 .icon--bootstrap {
   width: 102px;
   height: 102px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 83.19672131147541% 0;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 46.15384615384615% 57.99759615384615%;
 }
 
 .icon--c {
   width: 92px;
   height: 92px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 53.4136546184739% 99.7621359223301%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 40.70796460176991% 80.57981220657277%;
 }
 
 .icon--c-plus {
   width: 82px;
   height: 83.93px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 100% 20.125217225700478%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 99.84848484848484% 0;
 }
 
 .icon--computer-networks {
   width: 102px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 83.19672131147541% 48.34123222748815%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 81.289592760181% 21.181192660550458%;
 }
 
 .icon--css3 {
   width: 82px;
   height: 92.96px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 0 99.9951342934994%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 77.77056277056278% 41.01966873706004%;
 }
 
 .icon--data-structure {
   width: 102px;
   height: 82.4px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 0 77.9459203036053%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 23.076923076923077% 35.41551882460973%;
 }
 
 .icon--email {
   width: 102px;
   height: 102px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 62.295081967213115% 25.37313432835821%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 0 57.99759615384615%;
 }
 
 .icon--express-js {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 100% 78.78436018957346%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 99.84848484848484% 56.86467889908257%;
 }
 
 .icon--firebase {
   width: 92px;
   height: 92px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 34.93975903614458% 99.7621359223301%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 20.353982300884955% 80.57981220657277%;
 }
 
 .icon--git {
   width: 135.3px;
   height: 68.67px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 0 21.21379183607838%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 0 0;
 }
 
 .icon--github {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 100% 39.921800947867304%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 99.84848484848484% 19.25%;
 }
 
 .icon--html5 {
   width: 92px;
   height: 92px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 16.46586345381526% 99.7621359223301%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 0 80.57981220657277%;
 }
 
 .icon--java {
   width: 122px;
   height: 78.67px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 28.846153846153847% 37.85766346131239%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 32.06161137440759% 0;
 }
 
 .icon--jquery {
-  width: 152px;
+  width: 102px;
   height: 92.35px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 0 0;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 81.289592760181% 0;
 }
 
 .icon--js {
   width: 82px;
   height: 87.69px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 70.4724409448819% 98.72931229132136%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 59.74025974025974% 79.77272199112268%;
 }
 
 .icon--linkedin {
   width: 102px;
   height: 102px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 83.19672131147541% 25.37313432835821%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 23.076923076923077% 57.99759615384615%;
 }
 
 .icon--mongodb {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 20.078740157480315% 77.87203791469194%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 17.748917748917748% 99.83256880733946%;
 }
 
 .icon--mongoose {
   width: 102px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 0 58.440758293838854%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 58.21266968325792% 23.394495412844037%;
 }
 
 .icon--nodejs {
   width: 135px;
   height: 85.6px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 0 38.48470363288719%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 0 15.881128584643848%;
 }
 
 .icon--postgres-sql {
   width: 82px;
   height: 84.54px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 100% 0;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 77.4891774891775% 79.19300512157984%;
 }
 
 .icon--python {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 100% 98.21563981042654%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 99.84848484848484% 75.67201834862385%;
 }
 
 .icon--react {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 20.078740157480315% 58.440758293838854%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 0 99.83256880733946%;
 }
 
 .icon--redux {
   width: 82px;
   height: 74.2px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 36.22047244094488% 57.38017682643089%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 77.77056277056278% 60.232086525461916%;
 }
 
 .icon--resume {
   width: 102px;
   height: 102px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 62.295081967213115% 0;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 58.21266968325792% 0;
 }
 
 .icon--web-dev {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 36.22047244094488% 77.87203791469194%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 35.497835497835496% 99.83256880733946%;
 }
 
 .icon--webpack {
   width: 82px;
   height: 82px;
-  /* background-image: url('../sprite/css/sprite-cc75b77d.svg'); */
-  background-position: 52.36220472440945% 77.87203791469194%;
+  /* background-image: url('../sprite/css/sprite-fb2fb88c.svg'); */
+  background-position: 53.246753246753244% 99.83256880733946%;
 }
 
 .self-intro {
