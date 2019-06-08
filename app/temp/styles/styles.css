@@ -939,7 +939,7 @@ Also, with display: inline-block, the top and bottom margins/paddings are respec
   position: fixed;
   z-index: 5;
   /* background-color: rgba(171, 216, 216, 0.9); */
-  background-color: rgba(205,247,247, 0.9);
+  background-color: rgba(235,244,235, 0.9);
   top: 0; /*guarantee it to take up the full height of the browser*/
   bottom: 0;  /*guarantee it to take up the full height of the browser*/
   left: 0;  /*guarantee it to take up the full width of the browser*/
@@ -1305,7 +1305,7 @@ Instead, edit gulp/templates/sprite*****/
   }
 
 .self-intro__icon i{
-      color: #cdf7f7;
+      color: #ebf4eb;
     }
 
 .self-intro__icon i:hover{
